@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import styles from "./container.module.scss";
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -29,7 +30,7 @@ function Container({ children, title, description }: ContainerProps) {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{children}</main>
+      <main className={styles.container}>{children}</main>
     </>
   );
 }
