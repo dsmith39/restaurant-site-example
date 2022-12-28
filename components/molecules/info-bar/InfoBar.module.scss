@@ -1,0 +1,28 @@
+@use "../../../styles/variables" as *;
+
+.infoBar {
+  padding: calcRem(12) 0;
+  background-color: $color-primary;
+}
+.infoBar h2 {
+  color: white;
+  text-align: center;
+  font-size: calcRem(14);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  @include breakpoint(iphone8) {
+    font-size: calcRem(16);
+  }
+  @include breakpoint(iphone8plus) {
+    font-size: calcRem(18);
+  }
+  @include breakpoint(ipadmini) {
+    font-size: calcRem(32);
+  }
+  @include breakpoint(ipadpro) {
+    font-size: calcRem(32);
+  }
+  @include breakpoint(macbookair) {
+    font-size: calcRem(32);
+  }
+}
