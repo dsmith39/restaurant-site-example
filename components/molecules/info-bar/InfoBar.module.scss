@@ -1,0 +1,6 @@
+@use "../../../styles/variables" as *;
+
+.infoBar {
+  text-align: center;
+  font-size: calcRem(12);
+}
